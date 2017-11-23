@@ -1,0 +1,107 @@
+/* Navbar transparent after scroll down */
+.navbar-custom {
+  background-color: transparent;
+  padding: 25px 0;
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  transition: padding 0.3s;
+  border: none; }
+  .navbar-custom .navbar-brand {
+    font-size: 5em;
+    color: white;
+    margin-top: -20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  .navbar-custom .navbar-nav li {
+    border-radius: 13px;
+    background-color: black; }
+  .navbar-custom .navbar-nav li > a {
+    color: white !important;
+    background-color: black;
+    margin: 5px 0px; }
+  .navbar-custom .navbar-nav li > a:hover {
+    color: black;
+    background-color: #f0bd01; }
+  .navbar-custom .navbar-nav .active > a {
+    transition: width .3s;
+    color: #f0bd01 !important; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #9d9d9d;
+  background-color: black;
+  border-radius: 13px; }
+
+.navbar-custom.affix {
+  background-color: transparent !important;
+  padding: 0 0 !important; }
+
+.logo-brand {
+  -webkit-filter: blur(0px);
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  transform: translateZ(0);
+  height: 80px !important;
+  float: right; }
+
+.link-font {
+  font-size: 12px; }
+
+/* navbar animation */
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+  margin-top: 5px;
+  margin-left: -10px; }
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.5s; }
+
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0); }
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1; }
+
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1; }
+
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0); }
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%; }
+
+.navbar-toggle .middle-bar {
+  opacity: 0; }
+
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%; }
+
+/* navabar toggle mute */
+.navbar-header {
+  float: none;
+  background: transparent;
+  margin-top: 35px; }
+
+.navbar-toggle {
+  display: block; }
+
+.navbar-collapse.collapse {
+  display: none !important; }
+
+.navbar-nav > li {
+  float: none;
+  text-align: center; }
+
+.navbar-collapse.collapse.in {
+  display: block !important; }
+
+@media (min-width: 768px) {
+  #bs-example-navbar-collapse-1 {
+    padding: 0 15px; } }

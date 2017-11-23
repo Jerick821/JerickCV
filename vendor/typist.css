@@ -1,0 +1,69 @@
+/*  Typist  */
+@-webkit-keyframes blink
+{
+    0%
+    {
+        opacity: 1.0;
+    }
+    50%
+    {
+        opacity: .0;
+    }
+    100%
+    {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink
+{
+    0%
+    {
+        opacity: 1.0;
+    }
+    50%
+    {
+        opacity: .0;
+    }
+    100%
+    {
+        opacity: 1.0;
+    }
+}
+
+.typist-blink
+{
+    font-weight: 800;
+}
+
+.typist-blink:after
+{
+    position: relative;
+    top: 15px;
+
+    display: inline-block;
+
+    height: 70px;
+    margin-right: 7px;
+    margin-left: 3px;
+
+    content: ' ';
+    -webkit-animation: blink 1s step-start 0s infinite;
+            animation: blink 1s step-start 0s infinite;
+
+    border-right: 2px solid;
+}
+
+.typist-blink > .selectedText
+{
+    display: none;
+}
+
+.typist-mark > .selectedText
+{
+    font-style: normal; 
+
+    color: #fff;
+    background-color: #222;
+}
+

@@ -1,0 +1,162 @@
+/* phone device */
+html, body {
+  overflow-x: hidden; }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px !important; }
+    body .section-title {
+      font-size: 40px !important; }
+    body .section-subtitle {
+      font-size: 22px; }
+  .navbar-header {
+    background-color: black !important;
+    margin-top: 0 !important;
+    padding-right: 40px !important; }
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    border-color: black !important;
+    background-color: black; }
+  .navbar-custom {
+    padding: 0 0 !important; }
+    .navbar-custom .navbar-brand {
+      margin-top: 0px !important;
+      margin-right: 0px !important;
+      height: 70px !important; }
+  .navbar-toggle {
+    margin-right: 20px !important;
+    margin-top: 30px !important;
+    padding: 0 0 !important; }
+  .navbar-custom.affix {
+    background-color: transparent !important;
+    padding: 10px 0 !important; }
+  .navbar-collapse {
+    padding: 0 0 !important; }
+  .container {
+    padding: 0 0 !important; }
+  .nav > li > a {
+    text-align: right;
+    margin-right: 24px !important; }
+  .navbar-nav li {
+    background-color: black !important; }
+  .navbar-nav li > a {
+    color: white !important; }
+  .navbar-nav li > a:hover {
+    color: #f0bd01 !important;
+    background-color: black !important; }
+  .navbar-nav .active > a {
+    transition: width .3s;
+    background-color: transparent !important;
+    color: #f0bd01 !important; }
+  a:hover {
+    color: #f0bd01 !important; }
+  .navbar-nav {
+    margin: 0;
+    padding: 7.5px 15px; }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    color: #9d9d9d;
+    background-color: black;
+    border-radius: 13px; }
+  #header {
+    text-align: center; }
+  .intro-text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: center; }
+  .hello {
+    font-size: 12px !important; }
+  .typist-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px !important;
+    line-height: 60px;
+    font-weight: 900;
+    color: rgba(240, 189, 1, 0.85);
+    display: block;
+    margin-left: 0px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    letter-spacing: 0px !important;
+    text-align: center;
+    line-height: 20px !important; }
+  .text-format {
+    font-family: "Oswald", sans-serif;
+    font-weight: 20;
+    font-size: 15px;
+    margin-top: -20px; }
+  .fit-img img {
+    float: none !important;
+    text-align: left;
+    height: 200px !important;
+    margin-top: -40px; }
+  button {
+    margin: 10px 0 !important; }
+  #about {
+    text-align: center; }
+  #experience {
+    padding: 60px 5px !important; }
+  .experience-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    width: 30px;
+    margin-top: -40px; }
+  .experience-title2 {
+    margin-top: 20px; }
+  .education-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    width: 30px;
+    margin-top: 70px; }
+  .date {
+    float: none;
+    text-align: right !important;
+    margin-right: 0 !important; }
+  .margin-education {
+    margin-top: 60px; }
+  .skills-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    margin-top: -40px; }
+  .projects-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    margin-top: -40px; }
+  .indent {
+    margin-left: 00px !important; }
+  a.darken span {
+    display: block;
+    position: absolute;
+    top: 45%;
+    color: white;
+    left: 20%;
+    text-align: center;
+    margin-right: 20%;
+    /* margin:auto 0; */ }
+  .resize {
+    width: 20vw;
+    float: left;
+    margin-left: -210px; }
+  .filter-button {
+    margin-top: 10px; }
+  #portfolio {
+    margin-left: 0px;
+    padding: 24px 5px !important;
+    padding-bottom: 60px !important; }
+  .inner {
+    padding: 0 0 !important;
+    overflow: visible !important; }
+  #n, #e, #m {
+    width: 300px !important; }
+  #contact-title {
+    font-size: 30px;
+    margin-top: -40px; }
+  .row {
+    margin: 0 0 !important; }
+  #contact {
+    padding-bottom: 40px !important; }
+  .contact-toggle {
+    font-size: 32px !important; }
+  footer {
+    text-align: center !important; }
+  .footer-right {
+    text-align: center !important; } }

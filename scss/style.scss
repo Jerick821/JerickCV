@@ -1,0 +1,225 @@
+$primary-color: #f0bd01;
+$title-font: 'Oswald', sans-serif;
+$subtitle-font: 'Oswald', sans-serif;
+$text-size: 16px;
+$text-font: 'Roboto';
+
+
+// BODY
+body {
+    font-family: $text-font;
+    font-weight: 200;
+    font-size: $text-size;
+    margin: 0;
+    padding: 0;
+    /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+    background: #333;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+    #video-background {
+        position: absolute;
+        right: 0; 
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        width: auto; 
+        height: auto;
+        z-index: -100;
+    }
+}
+.wrapper {
+    overflow-x:hidden;
+}
+// HEADER
+  
+header {
+    height: 100vh;
+  
+    .intro-text {
+        top: 35%;
+        left: 5%;
+    }
+    .hello {
+        font-family: $title-font;
+        font-size: 60px !important;
+        font-weight: 300;
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0.85);
+        background-color: rgba(0, 0, 0, 0.65);
+        width: 310px;
+        height: 110px;
+        padding: 20px 20px;
+        margin: -50px -20px;
+    }
+    .typist-text {
+        font-family: $text-font;
+        font-size: 100px;
+        font-weight: 850;
+        color: rgba(240, 189, 1, 1);
+        letter-spacing: -6px;
+        margin-bottom: -30px;
+    }
+    .project-button {
+        background-color: Transparent;
+        color: white;
+        cursor: pointer;
+        padding: 10px 50px 10px 50px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.70);
+        font-weight: bold;
+        outline: none;
+        font-family: $text-font;
+        &:hover {
+            background-color:black;
+        }
+
+    }
+    
+  
+}
+
+//  SECTION
+section {
+    padding: 120px 0px ;
+
+
+    .section-title {
+        color: $primary-color;
+        font-family: $title-font !important;
+        font-size: 60px;
+    }
+    
+    .section-subtitle {
+        padding-top: 20px;
+        color: white;
+        font-family: $subtitle-font;
+        font-size: 30px;
+    }
+
+    p {
+        font-family: $text-font;
+        color:#DFE2DB;
+    }
+
+}
+
+//  ABOUT
+#about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: black !important; 
+
+    .section-subtitle {
+        margin-top:-20px;
+        margin-bottom:40px;
+    }
+
+    .about-title {
+        color: #f0bd01;
+        font-family: 'Oswald', sans-serif;
+        font-size: 50px;
+        margin-right: 60px; }
+    
+    .about-title2 {
+        color: white !important;
+        margin-top: -10px;
+        margin-bottom: 20px; }
+    
+
+    
+    .about-me {
+        margin-top: 50px; 
+    }
+    
+    .fit-img img {
+        float: right;
+        height:380px;
+    }
+}
+
+// EXPERIENCE
+#experience {
+    background-image: url("../img/sawyer-bengtson-256261.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+    .indent {
+        margin-left: 50px; }
+    
+    .date {
+        float: right;
+        margin-right: 100px; 
+    }
+    a {
+        color: #13A0BF;
+    }
+    
+}
+
+// SKILLS
+#skills {
+    background-color: black; 
+    text-align: center;
+
+    .section-subtitle {
+        padding-top: 30px;
+        padding-bottom: 10px;}
+}
+
+// PROJECTS
+.projects-title {
+    padding-top: 120px;
+    font-family: 'Oswald', sans-serif;
+    color: #f0bd01;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center; 
+    color: $primary-color;
+    font-family: $title-font !important;
+    font-size: 60px;
+}
+
+
+#portfolio {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    text-align:center;
+}
+
+    
+
+#contact-toggle {
+    padding: 40px 0px !important;
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 0;
+    color: white;
+    background-color: black;
+  
+    .center-block {
+        display: table;
+    }
+    #trophy {
+        margin-top: -200px;
+        position: relative;
+        left: 45%;
+    }
+}
+
+// ANIMATION
+.w3-animate-bottom, .w3-animate-left, .w3-animate-right {
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-duration: 3s;
+}

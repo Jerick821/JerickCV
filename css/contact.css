@@ -1,0 +1,81 @@
+#contact {
+  padding-top: 30px;
+  background-color: #f0bd01 !important;
+  text-align: center;
+  margin-bottom: -120px; }
+
+#contact-title {
+  padding-top: 120px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  padding-bottom: 40px; }
+
+#n, #e, #m {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  width: 500px; }
+
+#mybtn {
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  background-color: black;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  cursor: pointer; }
+
+/*input placeholder*/
+input::-webkit-input-placeholder {
+  color: gray;
+  font-weight: bold; }
+
+input:-ms-input-placeholder {
+  color: gray;
+  font-weight: bold; }
+
+input::-moz-placeholder {
+  color: gray;
+  font-weight: bold; }
+
+/*textarea placeholder*/
+textarea::-webkit-input-placeholder {
+  color: gray; }
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: gray; }
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: gray; }
+
+textarea:-ms-input-placeholder {
+  color: gray; }
+
+.contact-toggle {
+  color: #f0bd01;
+  background-color: black;
+  cursor: pointer;
+  font-weight: 600 !important;
+  font-size: 40px;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 8px; }
+
+.contact-form {
+  text-align: center;
+  padding: 20px 0; }
+
+#contact-toggle {
+  background-color: #f0bd01; }
+
+.contact-success {
+  font-weight: bold;
+  color: black !important;
+  font-size: 20px; }

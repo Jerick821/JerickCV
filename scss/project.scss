@@ -1,0 +1,158 @@
+.projects-title {
+    padding-top: 120px;
+    font-family: 'Oswald', sans-serif;
+    color: #f0bd01;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500; }
+  
+  a.darken {
+      display: inline-block;
+      background:black;
+      padding: 0;
+      position:relative;
+      img{
+        
+        display: block;
+        
+        background:black;
+        
+        -webkit-transition: all 0.5s linear;
+           -moz-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+             -o-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+      }
+      span{
+        display:none;
+        position:absolute; 
+        top:45%;
+        color:#000;
+        left: 20%;
+        text-align:center;
+        margin-right: 20%;
+        /* margin:auto 0; */
+        
+      }
+      &:hover img {
+        opacity: 0.1;
+              
+      }
+      &:hover span{
+        color:#fff;
+        display:inline-block;
+        /* padding: 30% 0 0 45%; */
+        font-size:110%;
+        font-weight:100;
+  
+        -webkit-transition: all 0.5s linear;
+           -moz-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+             -o-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+    }
+  }
+  
+
+  
+  
+  
+  /* Portfolio */
+  .super-bg {
+    background-image: url("../img/sawyer-bengtson-256261.jpg");
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: white; }
+  
+  .filter-button {
+    background-color: #f0bd01;
+    color: black;
+    cursor: pointer;
+    font-weight: 600 !important;
+    padding: 10px 30px 10px 30px;
+    border: none; 
+    margin-bottom:10px;}
+  
+  
+  #filter {
+    padding-top: 50px;
+    text-align:center;
+    padding-bottom: 0px; }
+  
+  
+  
+  .inner {
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px; 
+    overflow: hidden;
+  }
+  
+  button {
+    margin-left: 10px;
+    transition-duration: 0.4s;
+    &:focus {
+      background-color: black;
+      color: white; 
+    }
+    &:hover {
+      background-color: black;
+      color: white; 
+    }
+  }
+  
+
+  
+  /* Pop up gallery */
+  .mfp-title {
+    font-size: 120%;
+    line-height: 2; }
+  
+  .mfp-container {
+    background: rgba(0, 0, 0, 0.95);
+    margin-top: -100px; }
+  
+  .mfp-figure figure {
+    margin: -3; }
+  
+  .mfp-img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 0 40px;
+    margin: 0 auto; }
+  
+  .mfp-counter {
+    display: none; }
+  
+  .label {
+    font-size: 14px !important;
+    font-weight: 100 !important; }
+  
+  .color {
+    color: green; }
+
+
+  //blur
+  .blur {
+    filter: blur(10px);
+    width:200px;
+    height:200px;
+  }
+
+  .blurry {
+    filter: blur(10px);
+    width:320px;
+    height:320px;
+  }
+
