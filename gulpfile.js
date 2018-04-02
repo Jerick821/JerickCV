@@ -25,6 +25,10 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
+////////////////
+// CREATE DIST
+////////////////
+
 gulp.task('css', function(){
     gulp.src(['vendor/*.css', 'css/*.css'])
         .pipe(minifyCSS())
@@ -32,17 +36,14 @@ gulp.task('css', function(){
         .pipe(gulp.dest('dist/css'))
 });
 
-// gulp.task('js', function(){
-//     gulp.src(['vendor/*.js', 'js/gallery.js', 'js/animate.js', 'js/index.js'])
-//         .pipe(uglify())
-//         .pipe(concat('index.min.js'))
-//         .pipe(gulp.dest('dist/js'))
-// });
+
 
 gulp.task('js', function(){
-    gulp.src(['vendor/*.js', 'js/gallery.js', 'js/animate.js', 'js/index.js'])
-        .pipe(concat('index.min.js'))
-        .pipe(gulp.dest('dist/js'))
+    gulp.src(['js/*.js'])
+    // gulp.src(['vendor/*.js', 'js/*.js','js/gallery.js', 'js/animate.js', 'js/index.js', 'js/canvas.js'])
+        .pipe(gulp.dest('dist/js'));
+    gulp.src(['vendor/*.js'])
+        .pipe(gulp.dest('dist/vendor'))
 });
 
 
@@ -60,6 +61,14 @@ gulp.task('copy', function () {
     
 });
 
-// gulp.task('default', ['copy','js','css']);
+gulp.task('default', ['copy','js','css']);
 
-gulp.task('default', ['serve']);
+// gulp.task('default', ['serve']);
+
+
+// gulp.task('js', function(){
+//     gulp.src(['vendor/*.js', 'js/gallery.js', 'js/animate.js', 'js/index.js'])
+//         .pipe(uglify())
+//         .pipe(concat('index.min.js'))
+//         .pipe(gulp.dest('dist/js'))
+// });

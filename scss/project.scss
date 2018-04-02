@@ -1,10 +1,13 @@
 .projects-title {
     padding-top: 120px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Rajdhani', sans-serif !important;
     color: #f0bd01;
     text-align: center;
-    font-size: 50px;
-    font-weight: 500; }
+    font-size: 40px;
+    font-weight: bold; 
+    margin-top:100px;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+  }
   
   a.darken {
       display: inline-block;
@@ -12,25 +15,29 @@
       padding: 0;
       position:relative;
       img{
-        
         display: block;
-        
+        opacity: 0.2;
         background:black;
+        
         
         -webkit-transition: all 0.5s linear;
            -moz-transition: all 0.5s linear;
             -ms-transition: all 0.5s linear;
              -o-transition: all 0.5s linear;
                 transition: all 0.5s linear;
+
+        
       }
       span{
-        display:none;
+        // display:none;
         position:absolute; 
         top:45%;
-        color:#000;
+        color:#FFFFFF;
+        font-weight: bold;
         left: 20%;
         text-align:center;
-        margin-right: 20%;
+        font-family: 'Rajdhani', sans-serif;
+        // margin-right: 20%;
         /* margin:auto 0; */
         
       }
@@ -45,11 +52,13 @@
         font-size:110%;
         font-weight:100;
   
-        -webkit-transition: all 0.5s linear;
-           -moz-transition: all 0.5s linear;
-            -ms-transition: all 0.5s linear;
-             -o-transition: all 0.5s linear;
-                transition: all 0.5s linear;
+        -webkit-transition: all 0.5s ease;
+           -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+             -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+
+                
     }
   }
   
@@ -59,18 +68,30 @@
   
   /* Portfolio */
   .super-bg {
+    // background-image: url("../img/sawyer-bengtson-256261.jpg");
+    // background-repeat: no-repeat;
+    // background-attachment: absolute;
+    // background-position: center;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // background-size: cover;
+    // -o-background-size: cover;
+    // color: white; 
+    margin-top:-100px;
     background-image: url("../img/sawyer-bengtson-256261.jpg");
     background-repeat: no-repeat;
-    background-attachment: absolute;
+    background-attachment: fixed;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: white; }
+  
+  }
   
   .filter-button {
-    background-color: #f0bd01;
+    // background-color: #f0bd01;
+    background-color: rgba(237, 205, 0, 0.65);
     color: black;
     cursor: pointer;
     font-weight: 600 !important;
@@ -101,6 +122,10 @@
       color: white; 
     }
     &:hover {
+      background-color: black;
+      color: white; 
+    }
+    &:active {
       background-color: black;
       color: white; 
     }
@@ -145,13 +170,13 @@
 
   //blur
   .blur {
-    filter: blur(10px);
+    // filter: blur(10px);
     width:200px;
     height:200px;
   }
 
   .blurry {
-    filter: blur(10px);
+    // filter: blur(10px);
     width:320px;
     height:320px;
   }

@@ -1,31 +1,33 @@
 #contact {
   padding-top: 30px;
-  background-color: #f0bd01 !important;
+  background-color: transparent !important;
   text-align: center;
   margin-bottom: -120px; }
 
 #contact-title {
   padding-top: 120px;
   font-family: 'Oswald', sans-serif;
-  color: black;
+  color: #f0bd01;
   font-size: 50px;
   font-weight: 500;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  margin-top: -20px; }
 
 #n, #e, #m {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
   color: white;
-  border-style: none;
+  border: 1px solid;
   border-radius: 5px;
+  border-color: #f0bd01;
   padding: 10px 10px 10px 10px;
   width: 500px; }
 
 #mybtn {
-  color: white;
+  color: black;
   font-weight: bold;
   margin-top: 25px;
-  background-color: black;
+  background-color: #f0bd01;
   border: none;
   padding: 10px 30px 10px 30px;
   cursor: pointer; }
@@ -65,7 +67,7 @@ textarea:-ms-input-placeholder {
   font-weight: 600 !important;
   font-size: 40px;
   padding: 10px 30px 10px 30px;
-  border: none;
+  border: 1px solid;
   border-radius: 8px; }
 
 .contact-form {
@@ -73,9 +75,31 @@ textarea:-ms-input-placeholder {
   padding: 20px 0; }
 
 #contact-toggle {
-  background-color: #f0bd01; }
+  background: linear-gradient(to right, black, #252424, black); }
 
 .contact-success {
   font-weight: bold;
-  color: black !important;
-  font-size: 20px; }
+  color: yellow !important;
+  font-size: 24px; }
+
+.contact-contain {
+  width: 650px;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 18px;
+  border: 1px solid;
+  border-color: rgba(240, 189, 1, 0.8); }
+
+.content {
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: bold;
+  position: relative;
+  z-index: 100; }
+
+.background {
+  color: #999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100; }

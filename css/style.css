@@ -1,13 +1,14 @@
 body {
   font-family: "Roboto";
   font-weight: 200;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   /*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
-  background: #333;
+  background: black;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  opacity: 1; }
   body #video-background {
     position: absolute;
     right: 0;
@@ -16,10 +17,15 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100; }
+    z-index: -100;
+    opacity: 0.6; }
 
 .wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: white; }
+
+#white-strip {
+  background: white !important; }
 
 header {
   height: 100vh; }
@@ -27,23 +33,20 @@ header {
     top: 35%;
     left: 5%; }
   header .hello {
-    font-family: "Oswald", sans-serif;
-    font-size: 60px !important;
-    font-weight: 300;
-    font-size: 100px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px !important;
+    font-weight: 400;
+    font-size: 50px;
     color: rgba(255, 255, 255, 0.85);
-    background-color: rgba(0, 0, 0, 0.65);
     width: 310px;
     height: 110px;
-    padding: 20px 20px;
-    margin: -50px -20px; }
+    margin-bottom: -90px; }
   header .typist-text {
-    font-family: "Roboto";
-    font-size: 100px;
-    font-weight: 850;
+    font-family: 'Courgette', cursive;
+    font-size: 60px;
     color: #f0bd01;
-    letter-spacing: -6px;
-    margin-bottom: -30px; }
+    letter-spacing: 2px;
+    text-shadow: 15px 15px 15px black; }
   header .project-button {
     background-color: Transparent;
     color: white;
@@ -62,24 +65,33 @@ section {
   padding: 120px 0px; }
   section .section-title {
     color: #f0bd01;
-    font-family: "Oswald", sans-serif !important;
-    font-size: 60px; }
+    font-family: 'Rajdhani', sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 8px 8px 10px black; }
   section .section-subtitle {
-    padding-top: 20px;
+    padding-top: 15px;
     color: white;
-    font-family: "Oswald", sans-serif;
-    font-size: 30px; }
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: -1px; }
   section p {
     font-family: "Roboto";
-    color: #DFE2DB; }
+    color: #DFE2DB;
+    margin-bottom: 1px; }
 
 #about {
   padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: black !important; }
+  padding-bottom: 120px; }
   #about .section-subtitle {
-    margin-top: -20px;
-    margin-bottom: 40px; }
+    margin-top: -30px;
+    margin-bottom: 5px; }
+  #about .square {
+    width: 50px;
+    height: 3px;
+    background-color: #f0bd01;
+    margin-bottom: 25px; }
   #about .about-title {
     color: #f0bd01;
     font-family: 'Oswald', sans-serif;
@@ -93,7 +105,7 @@ section {
     margin-top: 50px; }
   #about .fit-img img {
     float: right;
-    height: 380px; }
+    height: 300px; }
 
 #experience {
   background-image: url("../img/sawyer-bengtson-256261.jpg");
@@ -113,7 +125,6 @@ section {
     color: #13A0BF; }
 
 #skills {
-  background-color: black;
   text-align: center; }
   #skills .section-subtitle {
     padding-top: 30px;
@@ -121,15 +132,13 @@ section {
 
 .projects-title {
   padding-top: 120px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rajdhani', sans-serif !important;
   color: #f0bd01;
   text-align: center;
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: bold;
   text-align: center;
-  color: #f0bd01;
-  font-family: "Oswald", sans-serif !important;
-  font-size: 60px; }
+  color: #f0bd01; }
 
 #portfolio {
   padding-top: 40px;
@@ -155,3 +164,90 @@ footer {
   -webkit-animation-duration: 2s;
   /* Safari 4.0 - 8.0 */
   animation-duration: 3s; }
+
+.svg-wrapper {
+  height: 48px;
+  margin: 20px 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 256px;
+  text-align: center; }
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -360;
+  stroke-width: 8px;
+  stroke: #f0bd01; }
+
+.text {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  letter-spacing: 6px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+  font-weight: 400; }
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column; }
+
+a, a:hover {
+  text-decoration: none !important;
+  color: white; }
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -360;
+    stroke-width: 8px; }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px; } }
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards; }
+
+.bg-about {
+  background: linear-gradient(to right, black, #252424, black);
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+  margin-top: -70px; }
+
+#about {
+  transform: skewY(5deg); }
+
+#experience-content, #skills {
+  transform: skewY(5deg); }
+
+.bg-experience {
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg); }
+
+.bg-skills {
+  background: linear-gradient(to right, black, #252424, black);
+  transform: skewY(-5deg); }
+
+#skills {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+  background-color: none; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }

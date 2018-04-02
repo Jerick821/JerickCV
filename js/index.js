@@ -62,6 +62,9 @@ $(document).ready(function() {
         $("#filter-illustration").click(function () {
             $('#project-content').load('content/project/illustration.html', slideContent);     
         });
+        $("#filter-csharp").click(function () {
+            $('#project-content').load('content/project/c-sharp.html', slideContent);     
+        });
 
         function slideContent() {
             $(this).hide();
@@ -69,9 +72,6 @@ $(document).ready(function() {
         }
 
     });
-
-
-
 });
 
 
@@ -80,7 +80,8 @@ $(function(){
     $('.contact-toggle').click(function() {
         $(this).hide('slow');
         $("#contact").slideDown('slow');
-        $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+        $('html, body').animate({scrollTop: $("#contact").offset().top}, 'slow');
+        
         return false;
     });
 });
@@ -100,7 +101,7 @@ function submitForm(){
         if(ajax.readyState == 4 && ajax.status == 200) {
             if(ajax.responseText == "success"){
                 $("#my_form")[0].reset();
-                _("my_form").innerHTML += '<div class="contact-success">SENT!</div>';
+                _("my_form").innerHTML += '<div class="contact-success" style="color:yellow" style"font-size: 24px">SENT!</div>';
                 _("mybtn").disabled = false;
             } else {
                 _("status").innerHTML = ajax.responseText;
